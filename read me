@@ -1,0 +1,263 @@
+Test Log for Rolsa Technologies
+User Login
+
+Expected Result: User should log in successfully with valid credentials.
+
+Test Data:
+
+Email: valid@example.com
+Password: validPassword123
+Expected Result from Test Data: User is logged in and redirected to the home page.
+
+Actual Result: As expected, the user is logged in successfully.
+
+Issues Encountered and Corrections Made:
+
+Issue: A $ was mistakenly added to the if statement, causing a variable error.
+Correction: Removed the $, and the login function worked as intended.
+Expected Result: User should see an error message with invalid credentials.
+
+Test Data:
+
+Email: invalid@example.com
+Password: wrongPassword
+Expected Result from Test Data: Error message displayed: "Invalid credentials."
+
+Actual Result: As expected, the error message is displayed.
+
+Issues Encountered and Corrections Made:
+
+Issue: A missing semicolon at the end of a statement caused a syntax error.
+Correction: Added the semicolon, allowing the login page to load correctly.
+Expected Result: User should see an error message for empty fields.
+
+Test Data:
+
+Email: (empty)
+Password: (empty)
+Expected Result from Test Data: Error message displayed: "Please fill in all fields."
+
+Actual Result: As expected, the error message is displayed.
+
+Issues Encountered and Corrections Made:
+
+Issue: Curly brackets were omitted in the validation logic.
+Correction: Added the missing brackets, and the code interpreted correctly.
+User Sign Up
+
+Expected Result: New account should be created with valid inputs.
+
+Test Data:
+
+First Name: John
+Last Name: Doe
+Email: john.doe@example.com
+Password: password123
+Expected Result from Test Data: Account is created successfully, and the user is logged in.
+
+Actual Result: As expected, the account is created, and the user is logged in.
+
+Issues Encountered and Corrections Made:
+
+Issue: Duplicate email not being validated properly.
+Correction: Adjusted the query to check for existing emails accurately.
+Expected Result: User should see an error message for duplicate email.
+
+Test Data:
+
+First Name: Jane
+Last Name: Smith
+Email: john.doe@example.com
+Password: password123
+Expected Result from Test Data: Error message displayed: "Email already exists."
+
+Actual Result: As expected, the error message is displayed.
+
+Issues Encountered and Corrections Made:
+
+Issue: The system failed to validate the email format.
+Correction: Implemented regex validation for email format.
+Expected Result: User should see an error message for invalid email format.
+
+Test Data:
+
+First Name: Jane
+Last Name: Smith
+Email: invalidEmail
+Password: password123
+Expected Result from Test Data: Error message displayed: "Invalid email format."
+
+Actual Result: As expected, the error message is displayed.
+
+Issues Encountered and Corrections Made:
+
+Issue: Error message not displaying correctly.
+Correction: Fixed the error handling logic to ensure messages are shown.
+Account Management
+
+Expected Result: User should be able to update profile information successfully.
+
+Test Data:
+
+First Name: UpdatedName
+Last Name: UpdatedLast
+Email: updated@example.com
+Expected Result from Test Data: Profile is updated successfully.
+
+Actual Result: As expected, the profile is updated.
+
+Issues Encountered and Corrections Made:
+
+Issue: Missing validation for empty fields during updates.
+Correction: Added validation checks for empty fields.
+Expected Result: User should see an error message for invalid email format during update.
+
+Test Data:
+
+First Name: UpdatedName
+Last Name: UpdatedLast
+Email: invalidEmail
+Expected Result from Test Data: Error message displayed: "Invalid email format."
+
+Actual Result: As expected, the error message is displayed.
+
+Issues Encountered and Corrections Made:
+
+Issue: Logic error in email validation.
+Correction: Updated the validation function to handle edge cases.
+Expected Result: User should see an error message for empty fields during update.
+
+Test Data:
+
+First Name: (empty)
+Last Name: (empty)
+Email: (empty)
+Expected Result from Test Data: Error message displayed: "Please fill in all fields."
+
+Actual Result: As expected, the error message is displayed.
+
+Issues Encountered and Corrections Made:
+
+Issue: Error message not displaying correctly.
+Correction: Fixed the error handling logic to ensure messages are shown.
+Product Purchase
+
+Expected Result: User should be able to purchase a product successfully.
+
+Test Data:
+
+Product ID: 1
+Payment Method: Credit Card
+Card Number: 1234567890123456
+Expiration: 12/25
+CVV: 123
+Expected Result from Test Data: Purchase is completed successfully, and confirmation is displayed.
+
+Actual Result: As expected, the purchase is completed successfully.
+
+Issues Encountered and Corrections Made:
+
+Issue: Payment processing logic not handling errors.
+Correction: Implemented error handling for payment failures.
+Expected Result: User should see an error message for invalid payment details.
+
+Test Data:
+
+Product ID: 1
+Payment Method: Credit Card
+Card Number: invalidCard
+Expiration: 12/25
+CVV: 123
+Expected Result from Test Data: Error message displayed: "Invalid payment details."
+
+Actual Result: As expected, the error message is displayed.
+
+Issues Encountered and Corrections Made:
+
+Issue: Payment method validation not functioning.
+Correction: Added validation for payment method selection.
+Expected Result: User should see an error message for insufficient funds.
+
+Test Data:
+
+Product ID: 1
+Payment Method: Credit Card
+Card Number: 1234567890123456
+Expiration: 12/25
+CVV: 123 (simulate insufficient funds)
+Expected Result from Test Data: Error message displayed: "Insufficient funds."
+
+Actual Result: As expected, the error message is displayed.
+
+Issues Encountered and Corrections Made:
+
+Issue: Insufficient funds not being checked correctly.
+Correction: Implemented a mock payment gateway for testing.
+Dashboard Functionality
+
+Expected Result: User should be able to view their dashboard with relevant data.
+Test Data: User is logged in.
+Expected Result from Test Data: Dashboard displays user-specific data and graphs.
+Actual Result: As expected, the dashboard displays correctly.
+Issues Encountered and Corrections Made:
+Issue: Dashboard data not loading.
+Correction: Fixed the data fetching logic to ensure it retrieves user-specific data.
+Graph Display
+
+Expected Result: User should be able to view graphs without issues.
+Test Data: User is logged in and has data available.
+Expected Result from Test Data: Graphs are displayed correctly with relevant statistics.
+Actual Result: As expected, all graphs are visible and accurate.
+Issues Encountered and Corrections Made:
+Issue: Graphs not rendering due to missing data.
+Correction: Added checks to ensure data is available before rendering.
+Profile Info Editing
+
+Expected Result: User should see an error message for empty inputs.
+
+Test Data:
+
+First Name: (empty)
+Last Name: (empty)
+Email: (empty)
+Expected Result from Test Data: Error message displayed: "Please fill in all fields."
+
+Actual Result: As expected, the error message is displayed.
+
+Issues Encountered and Corrections Made:
+
+Issue: Error message not displaying correctly.
+Correction: Fixed the error handling logic to ensure messages are shown.
+Expected Result: User should see an error message for mismatched passwords.
+
+Test Data:
+
+Old Password: correctPassword
+New Password: newPassword
+Confirm Password: differentPassword
+Expected Result from Test Data: Error message displayed: "Passwords do not match."
+
+Actual Result: As expected, the error message is displayed.
+
+Issues Encountered and Corrections Made:
+
+Issue: Logic error in password confirmation.
+Correction: Updated the password validation logic to ensure it checks correctly.
+Expected Result: User should be able to change their password successfully.
+
+Test Data:
+
+Old Password: correctPassword
+New Password: newPassword
+Confirm Password: newPassword
+Expected Result from Test Data: Password is changed successfully.
+
+Actual Result: As expected, the password is changed.
+
+Issues Encountered and Corrections Made:
+
+Issue: Password change not updating in the database.
+Correction: Fixed the database update logic to ensure it saves changes.
+
+
+Validation checks 

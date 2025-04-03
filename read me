@@ -260,3 +260,15 @@ Issue: Password change not updating in the database.
 Correction: Fixed the database update logic to ensure it saves changes.
 
 validation
+
+2. Code Organisation (Q02.2)
+Criteria: Code should be maintainable, with appropriate naming conventions, logical organization, and informative commenting.
+Evaluation: While the test log itself does not directly show code organization, it references issues related to code structure (e.g., indentation errors, validation logic). This indicates an awareness of the importance of code organization and maintainability, which is essential for achieving high marks in this area.
+
+4. Legal and Regulatory Guidelines and Standards (Q02.4)
+Criteria: The application should consider accessibility, compatibility, and legal/ethical considerations.
+Evaluation: While the test log does not explicitly mention legal and regulatory guidelines, the focus on user input validation and error handling suggests an awareness of the need for compliance with standards. However, it could be beneficial to explicitly mention considerations like GDPR or accessibility features in future iterations.
+
+Explicitly Mention Legal and Regulatory Considerations: Include references to GDPR compliance, accessibility standards, or other relevant legal guidelines.
+Highlight User Experience Improvements: Discuss any specific user experience enhancements made based on testing feedback.
+Include More Edge Cases: Consider adding more extreme test cases to demonstrate robustness, such as testing with maximum input lengths or special characters.

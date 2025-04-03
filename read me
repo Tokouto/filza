@@ -13,8 +13,8 @@ Actual Result: As expected, the user is logged in successfully.
 
 Issues Encountered and Corrections Made:
 
-Issue: A $ was mistakenly added to the if statement, causing a variable error.
-Correction: Removed the $, and the login function worked as intended.
+Issue: Indentation error in the login function caused a runtime error.
+Correction: Fixed the indentation to ensure the function executed correctly.
 Expected Result: User should see an error message with invalid credentials.
 
 Test Data:
@@ -259,5 +259,4 @@ Issues Encountered and Corrections Made:
 Issue: Password change not updating in the database.
 Correction: Fixed the database update logic to ensure it saves changes.
 
-
-Validation checks 
+validation
